@@ -28,20 +28,23 @@ Built as part of internship assignment.
 ```bash
 git clone https://github.com/shreyakm21/SSC.git
 cd SSC
-
+```
 Install dependencies
+```bash
 npm install
+```
 
 Run the development server
+```bash
 npm run dev
+```
 
 Start backend server (if used)
+```bash
 node server.js
+```
 
 📌 Future Improvements
-
 ✅ User authentication and order history
-
 ✅ Real product API integration
-
 ✅ Payment gateway simulation
