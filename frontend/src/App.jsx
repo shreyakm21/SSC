@@ -6,6 +6,7 @@ import CartPage from "./pages/CartPage";
 import { CartProvider, useCart } from "./context/CartContext";
 import { ToastProvider } from "./context/ToastContext";
 import CheckoutPage from "./pages/CheckoutPage";
+import HomePage from "./components/HomePage";
 
 function Navbar() {
   const { cartItems } = useCart();
@@ -16,7 +17,7 @@ function Navbar() {
         <Link to="/">Simple Shopping Cart</Link>
       </h1>
       <nav>
-        <Link to="/" className="mr-6 hover:underline">
+        <Link to="/products" className="mr-6 hover:underline">
           Products
         </Link>
         <Link to="/cart" className="hover:underline">
@@ -35,7 +36,8 @@ function App() {
           <Navbar />
           <main className="p-6">
             <Routes>
-              <Route path="/" element={<ProductGrid />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/products" element={<ProductGrid />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
             </Routes>
