@@ -1,3 +1,4 @@
+
 // src/context/CartContext.jsx
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useToast } from "./ToastContext";
@@ -90,3 +91,4 @@ export function CartProvider({ children }) {
 }
 
 export const useCart = () => useContext(CartContext);
+

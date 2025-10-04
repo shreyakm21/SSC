@@ -1,3 +1,4 @@
+
 // src/components/CartPage.jsx
 import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
@@ -96,7 +97,7 @@ export default function CartPage() {
               <p>₹{item.price}</p>
             </div>
 
-            {/* Quantity controls */}
+            
             <div className="flex items-center space-x-3">
               <button
                 onClick={() => decreaseQuantity(item.id)}
@@ -133,3 +134,8 @@ export default function CartPage() {
     </div>
   );
 }
+
+
+
+
+

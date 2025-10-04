@@ -1,3 +1,4 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -21,7 +22,7 @@ export default function HomePage() {
         className="absolute inset-0 -z-10"
       />
 
-      {/* Heading */}
+      {/*Heading */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,7 +32,7 @@ export default function HomePage() {
         🛒 Simple Shopping Cart
       </motion.h1>
 
-      {/* Subtitle */}
+      {/*Subtitle */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -62,7 +63,7 @@ export default function HomePage() {
         </ul>
       </motion.div>
 
-      {/* Enter Project Button */}
+      {/* Enter Project Button*/ }
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -78,3 +79,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+

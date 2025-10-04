@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
 
@@ -24,7 +25,7 @@ export default function ProductGrid() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border rounded-lg shadow-md p-4 flex flex-col items-center"
+            className="border rounded-lg shadow-md p-4 flex flex-col items-center bg-gradient-to-br from-blue-50 to-blue-200"
           >
             <img
               src={product.imageUrl}
@@ -45,3 +46,5 @@ export default function ProductGrid() {
     </div>
   );
 }
+
+
